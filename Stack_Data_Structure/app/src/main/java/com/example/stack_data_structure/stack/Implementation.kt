@@ -4,16 +4,23 @@ class Implementation<T : Any> :stack<T> {
     val storage = arrayListOf<T>()
     override fun toString() = buildString {
         appendLine("-------Top---------")
-        storage.reversed().forEach{
+        storage.reversed().forEach {
             appendLine("$it")
         }
         appendLine("--------------------")
     }
+
     override fun push(element: T) {
-        TODO("Not yet implemented")
+        storage.add(element)
+
     }
 
     override fun pop(): T? {
-        TODO("Not yet implemented")
+       return if (storage.size == 0) {
+           null
+        } else {
+            storage.removeAt(storage.size - 1)
+        }
     }
-}
+    }
+
