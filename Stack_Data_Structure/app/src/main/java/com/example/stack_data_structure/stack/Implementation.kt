@@ -22,5 +22,8 @@ class Implementation<T : Any> :stack<T> {
             storage.removeAt(storage.size - 1)
         }
     }
+    override fun peek(): T?{
+        return storage[storage.size-1]
+    }
     }
 
