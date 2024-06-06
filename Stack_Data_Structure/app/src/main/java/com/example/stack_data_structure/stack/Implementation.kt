@@ -25,5 +25,8 @@ class Implementation<T : Any> :stack<T> {
     override fun peek(): T?{
         return storage[storage.size-1]
     }
+    override fun size() : Int?{
+        return storage.size
+    }
     }
 
