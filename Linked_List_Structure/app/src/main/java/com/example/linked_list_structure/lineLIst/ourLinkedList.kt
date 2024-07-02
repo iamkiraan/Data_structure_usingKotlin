@@ -19,18 +19,18 @@ class ourLinkedList<T> {
 
     }
     fun pushElement(value : T){
-        head =Node(value, nextNode = head)
+        head =Node(value, nextNode = tail)
         if(tail == null)
         {
             tail= head
         }
         size+=1
     }
-    fun appendElement(value: T){
-        head = Node(value, nextNode = head)
-        if(tail == null){
-            tail =head
-        }
-        size+=1
-    }
+   fun appendElement(value: T){
+       if(isourLinkedListisEmpty()){
+           pushElement(value)
+           return
+       }
+       tai;
+   }
 }

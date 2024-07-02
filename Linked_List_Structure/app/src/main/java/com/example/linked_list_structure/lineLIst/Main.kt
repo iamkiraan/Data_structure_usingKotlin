@@ -2,9 +2,13 @@ package com.example.linked_list_structure.lineLIst
 
 fun main(){
     val ourLinkLIst = ourLinkedList<Int>()
-    ourLinkLIst.appendElement(10)
-    ourLinkLIst.pushElement(20)
-    ourLinkLIst.pushElement(100)
-    ourLinkLIst.pushElement(210)
+    for(i in 1..10){
+        ourLinkLIst.pushElement(i)
+    }
     println(ourLinkLIst)
+//    for(i in 11..15){
+//        ourLinkLIst.pushElement(i)
+//    }
+//    println(ourLinkLIst)
+
 }
